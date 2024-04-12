@@ -1,0 +1,97 @@
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  h2{
+    text-align: center;
+    text-shadow: 3px 3px 6px rgb(58, 58, 121);
+  }
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 20px 0;
+    transform: translateY(20%) ;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  #features {
+    background-color: rgb(190, 238, 240);
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  #cta {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #cta button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #cta button:hover {
+    background-color: #eee;
+  }
+  #cta button {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
